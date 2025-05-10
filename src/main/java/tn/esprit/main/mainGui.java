@@ -18,7 +18,7 @@ public class mainGui extends Application {
         System.out.println(db);
 
         // Load the FXML
-        FXMLLoader loader = new FXMLLoader(getClass().getResource("/login.fxml"));
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/afficher_avis_back.fxml"));
         Parent root = loader.load();
         Scene scene = new Scene(root);
 

@@ -10,7 +10,7 @@
     <children>
         <VBox layoutX="-3.0" prefHeight="672.0" prefWidth="266.0" spacing="20" style="-fx-background-color: transparent; -fx-padding: 25;">
             <children>
-            <TextField fx:id="NomUtilisateur" editable="false" focusTraversable="false" style="-fx-background-color: transparent; -fx-border-color: #F3CE5D; -fx-text-fill: #F3CE5D; -fx-font-size: 20px; -fx-font-weight: bold; -fx-alignment: center;" />
+            <TextField fx:id="NomUtilisateur" editable="false" focusTraversable="false" promptText="--" style="-fx-background-color: transparent; -fx-border-color: #F3CE5D; -fx-text-fill: #F3CE5D; -fx-font-size: 20px; -fx-font-weight: bold; -fx-alignment: center;" />
                 <Separator style="-fx-background-color: #F3CE5D;" />
                 <AnchorPane prefHeight="554.0" prefWidth="217.0">
                     <children>

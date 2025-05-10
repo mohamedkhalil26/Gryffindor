@@ -2,17 +2,9 @@ package tn.esprit.controller;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
 import javafx.scene.input.MouseEvent;
-import javafx.stage.Stage;
-import tn.esprit.entites.Utilisateur;
-import tn.esprit.entites.UtilisateurConnecte;
-
-import java.io.IOException;
 
 public class SideBarBackController {
 
@@ -44,16 +36,7 @@ public class SideBarBackController {
     private Button Voitures;
 
     @FXML
-    void initialize() {
-        Utilisateur U=UtilisateurConnecte.getInstance().getUtilisateurConnecter();
-        NomUtilisateur.setText(U.getNom());
-
-    }
-
-
-    @FXML
     void EventsChangeStyleEntered(MouseEvent event) {
-
 
     }
 
@@ -109,20 +92,6 @@ public class SideBarBackController {
 
     @FXML
     void Naviguer_a_login(ActionEvent event) {
-        UtilisateurConnecte.getInstance().setUtilisateurConnecte(null);
-        try {
-            FXMLLoader loader = new FXMLLoader(getClass().getResource("/login.fxml"));
-            Parent root = loader.load();
-
-            // Get the current stage from the button (if applicable)
-            Stage stage = (Stage) ((javafx.scene.Node) event.getSource()).getScene().getWindow();
-            Scene scene = new Scene(root);
-            stage.setScene(scene);
-            stage.setTitle("LOGIN");
-            stage.show();
-        } catch (IOException e) {
-            e.printStackTrace(); // Handle exception if the FXML loading fails
-        }
 
     }
 

@@ -138,4 +138,15 @@ public class Utilisateur {
     public int hashCode() {
         return Objects.hash(id_utilisateur, nom, prenom, age, role, email, numero_tel, username, mot_de_passe);
     }
+    public Utilisateur(int id, String nom) {
+        this.id_utilisateur = id;
+        this.nom = nom;
+    }
+
+
+
+
+    public String toString2() {
+        return nom; // Utilisé comme affichage par défaut
+    }
 }
